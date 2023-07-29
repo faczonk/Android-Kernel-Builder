@@ -7,7 +7,7 @@
     "device": "sm7150_sec_a71_eur_open",
     "defconfig": "sm7150_sec_a71_eur_open_defconfig"
   },
-  "withKernelSU": ture,
+  "withKernelSU": true,
   "toolchains": [
   {
     "repo": "https://github.com/kdrag0n/proton-clang",
