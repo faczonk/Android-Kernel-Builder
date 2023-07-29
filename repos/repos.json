@@ -19,8 +19,7 @@
     "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone/",
     "branch": "11",
     "name": "clang",
-    "binPath": ["bin"
-  ]
+    "binPath": ["bin"]
   }
   ],
   "ccache": false,
@@ -30,7 +29,7 @@
   "externalCommand": {
     "CLANG_TRIPLE": "aarch64-linux-gnu-",
     "CROSS_COMPILE": "aarch64-linux-gnu-",
-    "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-"
+    "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
     "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
   }
   },
