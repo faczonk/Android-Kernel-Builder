@@ -1,1 +1,36 @@
-[]
+[
+  {
+  "kernelSource": {
+    "name": "a71a",
+    "repo": "https://github.com/faczonk/a71a",
+    "branch": "master",
+    "device": "sm7150_sec_a71_eur_open",
+    "defconfig": "sm7150_sec_a71_eur_open_defconfig"
+  },
+  "withKernelSU": ture,
+  "toolchains": [
+  {
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "name": "proton-clang",
+    "binPath": ["./bin"]
+  }
+  ],
+  "ccache": false,
+  "params": {
+  "ARCH": "arm64",
+  "CC": "clang",
+  "externalCommand": {
+    "CLANG_TRIPLE": "aarch64-linux-gnu-",
+    "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+    "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
+  }
+  },
+  "AnyKernel3": {
+    "use": true,
+    "release": false,
+    "repo": "https://github.com/chf3-test/AnyKernel3",
+    "branch": "master"
+  }
+}
+]
