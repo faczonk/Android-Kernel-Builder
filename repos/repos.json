@@ -5,7 +5,7 @@
       "repo": "https://github.com/faczonk/a71a",
       "branch": "master",
       "device": "sm7150",
-      "defconfig": "thyme_defconfig"
+      "defconfig": "sm7150_sec_a71_eur_open_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
