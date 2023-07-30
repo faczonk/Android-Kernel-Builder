@@ -39,8 +39,8 @@
   "AnyKernel3": {
     "use": true,
     "release": true,
-    "repo": "https://github.com/nishant6342/AnyKernel3",
-    "branch": "cupida"
+    "repo": "https://github.com/chf3-test/AnyKernel3",
+    "branch": "master"
   }
 }
 ]
