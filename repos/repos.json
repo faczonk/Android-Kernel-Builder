@@ -3,9 +3,9 @@
   "kernelSource": {
     "name": "v4.14-274-a71",
     "repo": "https://github.com/faczonk/v4.14-274-a71",
-    "branch": "master",
-    "device": "k85v1_64",
-    "defconfig": "k85v1_64_defconfig"
+    "branch": "main",
+    "device": "sma715f",
+    "defconfig": "a71_eur_open_defconfig"
   },
   "withKernelSU": true,
   "toolchains": [
