@@ -1,45 +1,46 @@
 [
+{
+  "kernelSource": {
+    "name": "v4.14-274-a71",
+    "repo": "https://github.com/faczonk/v4.14-274-a71",
+    "branch": "master",
+    "device": "k85v1_64",
+    "defconfig": "k85v1_64_defconfig"
+  },
+  "withKernelSU": true,
+  "toolchains": [
   {
-    "kernelSource": {
-      "name": "a71a",
-      "repo": "https://github.com/faczonk/a71a",
-      "branch": "master",
-      "device": "sm7150",
-      "defconfig": "sm7150_sec_a71_eur_open_defconfig"
-    },
-    "withKernelSU": true,
-    "toolchains": [
-      {
-        "repo": "https://github.com/CruelKernel/samsung-exynos9820-toolchain/",
-        "branch": "google",
-        "name": "google",
-        "binPath": ["./aarch64-linux-android-4.9/bin", "llvm/bin"]
-      }
-    ],
+    "repo": "https://github.com/kdrag0n/proton-clang",
+    "branch": "master",
+    "name": "proton-clang",
+    "binPath": ["./bin"]
+  }
+],
+  "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "google/llvm/bin/clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "google/aarch64-linux-android-4.9/bin/aarch64-linux-android-",
-        "CLANG_TRIPLE": "google/llvm/bin/aarch64-linux-android-",
-        "LD": "google/llvm/bin/ld.lld",
-        "AR": "google/llvm/bin/llvm-ar",
-        "NM": "google/llvm/bin/llvm-nm",
-        "OBJCOPY": "google/llvm/bin/llvm-objcopy",
-        "OBJDUMP": "google/llvm/bin/llvm-objdump",
-        "READELF": "google/llvm/bin/llvm-readelf",
-        "OBJSIZE": "google/llvm/bin/llvm-size",
-        "STRIP": "google/llvm/bin/llvm-strip",
-        "LDGOLD": "google/aarch64-linux-android-4.9/bin/aarch64-linux-android-ld.gold",
-        "LLVM_AR": "google/llvm/bin/llvm-ar",
-        "LLVM_DIS": "google/llvm/bin/llvm-dis"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/chf3-test/AnyKernel3",
-      "branch": "master"
-    }
+  "AnyKernel3": {
+    "use": true,
+    "release": true,
+    "repo": "https://github.com/nishant6342/AnyKernel3",
+    "branch": "cupida"
   }
+}
 ]
