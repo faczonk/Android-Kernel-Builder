@@ -1,9 +1,9 @@
 [
 {
   "kernelSource": {
-    "name": "v4.14-274-a71",
-    "repo": "https://github.com/faczonk/v4.14-274-a71",
-    "branch": "main",
+    "name": "android_kernel_samsung_a71",
+    "repo": "https://github.com/faczonk/android_kernel_samsung_a71",
+    "branch": "android-11",
     "device": "sma715f",
     "defconfig": "a71_eur_open_defconfig"
   },
